@@ -1,3 +1,14 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "strictNullChecks": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
 }
